@@ -15,8 +15,8 @@ client = OpenAI(
 
 r = client.chat.completions.create(
     model="gemini-2.5-flash",
-    messages=[{"role": "user", "content": "Explain RAG in 2 lines for a beginner."}],
-    temperature=0,
+    messages=[{"role": "user", "content": "You are a strict teacher"}],
+    temperature=1,
 )
 print(r.choices[0].message.content)
 print("Tokens used:", r.usage)
